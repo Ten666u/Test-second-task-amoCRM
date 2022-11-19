@@ -1,0 +1,58 @@
+@import "../_mixin-font.sass"
+
+.intro
+    display: block
+    margin-top: 55px
+    padding: 40px 0 65px 14px
+    flex-direction: column
+    background-image: url(./styles/images/bg_mobile.png)
+    background-size: 100% 100%;
+
+    .intro_first-column
+        margin-left: 0
+
+        h1
+            @include font(Inter, 400, 36px, 43.57px)
+            b
+                @include font(Inter, 900, 36px, 43.57px)
+        p
+            margin-top: 15px
+            margin-left: 1px
+    
+    .intro_second-column
+        text-align: left
+        margin-top: 45px
+        
+        p
+            display: inline-block
+            b
+                text-transform: lowercase
+                letter-spacing: 0
+
+    .intro_containet-gifts-mobile
+        @include font(Montserrat, 400, 13px, 15.85px)
+        letter-spacing: .05em
+        margin: 0
+        margin-right: 39px
+        padding: 0
+        display: grid
+        grid-template-columns: minmax(115px, 1fr) minmax(145px, 1fr)
+        gap: 14px 10px
+        text-transform: uppercase
+        list-style-type: none
+
+        li
+            display: block
+
+        li::before
+            display: inline-block
+            vertical-align: middle
+            width: 10px
+            height: 1px
+            background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%)
+
+
+            margin-right: 5px
+            content: ' '
+
+

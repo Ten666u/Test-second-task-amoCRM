@@ -1,0 +1,68 @@
+@import "_mixin-font.sass"
+
+img
+    vertical-align: unset
+
+header
+    margin-top: 46px
+    width: 1140px
+    height: 40px
+    display: flex
+    align-items: center
+    position: relative
+
+    .header_logo
+        height: 24px
+        
+        img
+            width: 100%
+            height: 100%
+            
+    .txt_under-logo
+        position: absolute
+        width: 165px
+        margin-top: 10px
+        @include font(Montserrat, 300, 10px, 12.19px)
+
+    .nav_links
+        margin-bottom: 0
+        display: flex
+        list-style: none
+        width: 503px
+        justify-content: space-between
+        margin-left: 53px
+        padding: 0
+
+        a
+            text-decoration: none
+            color: white
+            @include font(Inter, 500, 16px, 19.36px)
+    
+    >a
+        text-decoration: none
+        color: white
+        margin-left: 137px
+        @include font(Inter, 500, 16px, 19.36px)
+
+        &:hover
+            color: white
+
+    .header_social-link
+        display: flex
+        justify-content: space-between
+        margin-left: 47px
+        width: 117px
+
+        >a
+            display: flex
+            justify-content: center
+            flex-direction: column
+            height: 20px
+            width: 20px
+
+
+
+
+
+        
+    

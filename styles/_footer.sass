@@ -1,0 +1,71 @@
+@import "_mixin-font.sass"
+
+footer
+    margin-top: 70px
+    padding-bottom: 20px
+
+    .footer_links-layouts
+        display: flex
+        justify-content: space-between
+
+        a
+            text-decoration: none
+            @include font(Inter, 400, 16px, 19.36px, #E4E5EA)
+
+        h6
+            @include font(Inter, 700, 14px, 16.94px, #656566)
+            margin-bottom: 20px
+            letter-spacing: .05em
+
+.footer_first-container
+    display: flex
+
+.footer_company-links
+    margin-right: 98px
+    a
+        display: block
+        margin-bottom: 10px
+
+.footer_menu-grid-links
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 10px 52px
+
+.footer_second-container
+    text-align: right
+
+    .footer_number
+        @include font(Inter, 500, 16px, 19.36px)
+        display: block
+
+    .footer_social-link
+        margin-top: 20px
+        display: inline-flex
+        justify-content: space-between
+        width: 80px
+
+        >a
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 20px
+            width: 20px
+
+.footer_address
+    margin-top: 20px
+    display: block
+
+.footer_signature
+    text-align: right
+    margin-top: 33px
+    margin-bottom: 5px
+    @include font(Montserrat, 400, 12px, 14.63px)
+
+.footer_privacy-policy
+    display: block
+    margin-top: 5px
+    text-align: right
+    @include font(Montserrat, 400, 12px, 14.63px)
+
+    &:hover
+        color: #E4E5EA

@@ -1,0 +1,62 @@
+
+    
+.intro
+    display: flex
+    flex: 1 0 auto
+    justify-content: space-between
+    margin-top: 125px
+
+    .intro_first-column
+        margin-left: -3px
+        h1
+            @include font(Inter, 400, 48px, 58.09px)
+
+            b
+                background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%)
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                @include font(Inter, 900, 48px, 58.09px)
+        
+        p
+            margin-top: 30px
+            margin-left: 1px
+            @include font(Montserrat, 400, 18px, 21.94px)
+            margin-bottom: 0px
+    
+    .intro_second-column
+        text-align: right
+        margin-top: 15px
+        
+        p
+            @include font(Inter, 500, 18px, 21.78px)
+            background: linear-gradient(92deg, #FCB045 27.14%, red 121.36%)
+            -webkit-background-clip: text;
+            b
+                @include font(Inter, 700, 18px, 21.78px)
+                -webkit-text-fill-color: transparent
+                letter-spacing: .05em
+                            
+
+    .intro_second-column_gifts
+        margin-top: 40px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 30px
+
+        h6
+            @include font(Inter, 500, 18px, 21.78px)
+            margin-bottom: 6px
+            letter-spacing: .05em
+
+        p
+            @include font(Montserrat, 400, 16px, 19.5px)
+            margin-bottom: 0px
+
+    .intro_second-column_button
+        @include font(Inter, 500px, 16px, 19.36px)
+        border: none
+        background-color: #4077F3
+        width: 262px
+        height: 61px
+        margin-top: 60px
+

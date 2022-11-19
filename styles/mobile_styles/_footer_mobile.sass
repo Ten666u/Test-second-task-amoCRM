@@ -1,0 +1,54 @@
+@import "../_mixin-font.sass"
+
+footer
+    background: #0E1014
+    margin-top: 0
+    margin-bottom: 0
+    padding: 41px 30px 60px 16px
+
+    .footer_links-layouts
+        display: block
+
+        a
+            text-decoration: none
+            @include font(Inter, 400, 14px, 16.94px, #E4E5EA)
+
+        h6
+            @include font(Inter, 700, 12px, 14.52px, #656566)
+            margin-bottom: 20px
+
+    .footer_first-container
+        display: block
+
+        .footer_company-links
+            margin-right: 0
+
+        .footer_menu-links
+            margin-top: 30px
+            gap: 10px 48px
+    
+    .footer_second-container
+        margin-top: 30px
+        text-align: left
+
+        .footer_social-link
+            margin-top: 8px
+            width: 92px
+
+            >a  
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 24px
+                width: 24px
+
+    .footer_address
+        margin-top: 10px
+
+.footer_signature
+    text-align: left
+    margin-top: 50px
+
+.footer_privacy-policy
+    text-align: left
+    margin-top: 5px
